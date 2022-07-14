@@ -1,3 +1,7 @@
+
+window.onload=function(){
+
+
 //variables
 
 var start
@@ -27,9 +31,9 @@ var vector3
 
 //button
 var generate=document.querySelector("#gen")
-var reset=document.querySelector("#reset")
-var up=document.querySelector("#up")
-var down=document.querySelector("#down")
+ var reset=document.querySelector("#reset")
+  var up=document.querySelector("#up")
+   var down=document.querySelector("#down")
 
 
 //end variables
@@ -54,28 +58,28 @@ i=countParagraph
 }
 
 function generateText(){
-construction()
-document.getElementById("teste").innerHTML= loremIpsum + text
+     construction()
+      document.getElementById("text").innerHTML= loremIpsum + text
 }
 
 function resetText(){
     //RETIRAR A SEGUNDA LINHA DPS
     text=[]
-    vector3=[]
-    vector2=[]
-    countParagraph=1
-    document.getElementById("para").innerHTML=countParagraph
-    document.getElementById("teste").innerHTML=text
+     vector3=[]
+      vector2=[]
+       countParagraph=1
+        document.getElementById("para").innerHTML=countParagraph
+          document.getElementById("text").innerHTML=text
 }
 
 function downPara(){
     if(countParagraph == 1){
         countParagraph=1
-        document.getElementById("para").innerHTML=countParagraph
+         document.getElementById("para").innerHTML=countParagraph
     }
     else if(countParagraph > 1){
         countParagraph--
-        document.getElementById("para").innerHTML=countParagraph
+         document.getElementById("para").innerHTML=countParagraph
     }
 }
 
@@ -84,8 +88,10 @@ function downPara(){
 
 
 generate.addEventListener("click", generateText)
-reset.addEventListener("click", resetText)
-up.addEventListener("click", function(){countParagraph++; document.getElementById("para").innerHTML=countParagraph;})
-down.addEventListener("click", downPara)
+ reset.addEventListener("click", resetText)
+  up.addEventListener("click", function(){countParagraph++; document.getElementById("para").innerHTML=countParagraph;})
+   down.addEventListener("click", downPara)
 
 document.getElementById("para").innerHTML=countParagraph
+
+}

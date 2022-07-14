@@ -4,23 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
    
     <title>Document</title>
 </head>
 <body>
-<h1>Lorem Ipsum Generator</h1>
 
-<button id="gen">Generate</button>
-<button id="reset">Reset</button>
-<h3 id="para"></h3>
-<button id="up">+ paragraphs</button>
-<button id="down">- Paragraphs</button>
+    <nav class="bar bg-secondary"><br>
+    </nav>
 
-    <p id="teste"></p>
+<h1 class="display-2 text-center">Lorem Ipsum Generator</h1>
+<hr>
+
+<div class="row mx-auto">
+    <div class="col">
+        <p>Lorem ipsum is a well-known text among design and publishing professionals. 
+            It is a poem in Latin, written by Cicero in 45 BC, with the letters scrambled. 
+            It is used worldwide to fill spaces in publications before the actual content is inserted.
+            You might wonder why a designer would choose to use lorem ipsum text instead of a few paragraphs in their native language. 
+            Why not just copy and paste a page from an old book or something?
+            The main reason for this is to keep people from focusing on the actual text. When someone creates 
+            a template (or uses a free template site) and wants to get feedback on it, they don't want people 
+            reviewing it to be distracted by what the text says.
+            
+            Also, lorem ipsum resembles real text. Copying and pasting the same few words would result in 
+            an uneven distribution of letters. With lorem ipsum text, you can focus on how the font and page 
+            layout look with near-real copy.</p>
+    </div>
+    <div class="col">
+        <p>Although the lorem ipsum text seems nonsensical, it is actually rooted in a true work in Latin. 
+            It comes from Cicero's 45 BC work "De finibus bonorum et malorum" (On the ends of good and evil), which is a look at ethics. The lorem ipsum text comes from sections 1.10.32 and 1.10.33.
+            However, the common lorem ipsum text we use today is not proper Latin. Compared to Cicero's work, 
+            our text lorem ipsum is a nonsensical text. Words that deviate from their initial form have been 
+            added, removed and changed.
+            The Doctor. Richard McClintock discovered the origin of the text by searching for the rare Latin 
+            word "consectetur" in classical literature. His quest appeared in Cicero's work.
+            It is unknown who made these changes to the text, or exactly when, to make the mess of words we 
+            know today. Sometime in the 1500s, an unknown printer scrambled words that have survived the digital age.</p>
+    </div>
+
+</div>
+<hr>
+
+
+<div class="row mx-auto">
+    <div class="col"></div>
+    <div class="col text-center"><h6>Paragraphs:</h6></div>
+<div class="col"></div>
+</div>
+
+<div class="row mx-auto">
+
+  <div class="col-4"></div>
+  <div class="col">
+  <div class="row mx-auto text-center">
+<div class="col"><button class="btn btn-secondary" id="down">-</button></div>
+<div class="col p-2">  <h3 id="para"></h3></div>
+<div class="col"><button class="btn btn-secondary" id="up">+</button></div>
+</div>
+</div>
+<div class="col-4"></div>
+</div>
+</div>
+
+
+<div class="row mx-auto">
+
+   <div class="col"></div>
+<div class="col text-center">
+    <button type="button" class="btn btn-secondary" id="gen">Generate</button>
+    <button type="button"class="btn btn-secondary" id="reset">Reset</button>
+</div>
+<div class="col"></div>
+</div>
+
+
+<div class="mx-auto mt-2 mb-3">
+<div id="camp" class="mx-auto">
+    <p id="text"></p>
+</div>
+</div>
 
 
 
-    <script src="script.js"></script>
+<footer class="bar bg-secondary text-center text-light">
+    <h5>Gabriel S.</h5>
+</footer>
 </body>
 </html>

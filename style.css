@@ -1,0 +1,43 @@
+html ul{
+    list-style: none;
+    
+}
+
+.bar{
+    min-height: 50px;
+}
+#camp{
+    max-height: 300px;
+    min-height: 300px;
+    border: 2px solid;
+    width: 80%;
+    overflow:auto;
+}
+
+
+p{
+    padding-left: 5px;
+    
+}
+
+#navbar a{
+    color:maroon;
+}
+
+
+#img{
+    float: left;
+    padding-right: 20px;
+}
+
+.row{
+    text-align: justify;
+    max-width: 90%;
+    
+}
+
+#para{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
